@@ -1,0 +1,22 @@
+
+include <stdio.h>
+int main() {
+    int numero_visitantes;
+
+    // Recebe o número de visitantes
+    printf("Digite o número de visitantes de hoje: ");
+    scanf("%d", &numero_visitantes);
+
+    // Exibe a mensagem de confirmação
+    printf("Número de visitantes registrado com sucesso: %d\n", numero_visitantes);
+
+    return 0;
+git init
+
+git add algoritimos-e-robotica
+
+git remote add origin<url-do-repositorio>
+
+git push origin main 
+
+git@github.com:24014777/algoritmos-e-robotica.git
