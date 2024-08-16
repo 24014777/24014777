@@ -11,6 +11,7 @@ int main() {
     printf("Número de visitantes registrado com sucesso: %d\n", numero_visitantes);
 
     return 0;
+}
 git init
 
 git add exercicios
