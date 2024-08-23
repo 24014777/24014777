@@ -20,3 +20,5 @@ printf("sua media eh:%f",media);
     printf("Voce foi reprovado");
 
     }
+
+    return (0);
