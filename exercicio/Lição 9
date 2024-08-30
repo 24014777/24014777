@@ -1,0 +1,27 @@
+ float nota1,nota2,nota3,media;
+ char opcao;
+    printf("digite a nota1:");
+    scanf("%f",&nota1);
+    
+    printf("digite a nota2:");
+    scanf("%f",&nota2);
+    
+    printf("digite a nota3:");
+    scanf("%f",&nota3);
+    
+    media=(nota1+nota2+nota3)/3;
+    printf("sua media é:%f",media);
+    
+if (media>=5){
+  printf("Parabéns, você foi aprovado.Sua média é:%f",media);
+   printf(" Deseja calcular novamente?(S/N");
+  scanf("%s",&opcao);}  
+  
+  else{
+   printf("Parabéns, você foi reprovado te vejo ano que vem.Sua média é:%f",media);
+  printf(" Deseja calcular novamente?(S/N");
+  scanf("%s",&opcao);}
+  
+if(opcao=="S"){
+    goto refaz;
+    
