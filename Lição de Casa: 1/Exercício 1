@@ -2,9 +2,9 @@
 
 int main() {
    
-    int a;         // Declaração da variável
-    a = 10;        // Inicialização da variável
-    printf("%d\n", a); // Correção na formatação do printf
+    int a;         
+    a = 10;        
+    printf("%d\n", a); 
     
   return 0;
 }
