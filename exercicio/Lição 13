@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main() {
+    int n2, n3, n1;
+
+    printf("Digite o numero1: ");
+    scanf("%d", &n1);
+
+    printf("Digite o numero2: ");
+    scanf("%d", &n2);
+
+    printf("Digite o numero3: ");
+    scanf("%d", &n3);
+
+    if (n1=n2||n1=n3||n2=n3)
+         printf("Os numeros devem ser diferentes");
+    } else
+     if (n1>n2) || (n1>n3) {
+         printf("%d"n1);
+
+    }if (n2>n1) || (n2>n3) {
+    printf("%d"n2);
+
+    }if(n3>n1) || (n3>n2){
+    printf("%d"n3);
+    return 0;
+    }
+
