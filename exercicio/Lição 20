@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+int num1, num2, resultado;
+num1=1;
+resultado=num1*num2;
+ printf("digute o numero: ");
+    scanf("%d", &num2);
+while (num1<=10)
+{
+printf(" %d=%d*%d",resultado,num1,num2);
+num1++;
+}
+
+return 0;
+
+}
