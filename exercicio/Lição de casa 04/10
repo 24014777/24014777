@@ -1,24 +1,9 @@
-Exercício 1:
-#include <stdio.h>
-
-int main() {
-    printf("\nPedro Lucas Shirabiyoshi de Miranda Vicente\n");
-    printf("RA 24014777\n\n");
-
-    printf("Possibilidades de soma 7 no lançamento de dois dados:\n");
-
-    for (int dado1 = 1; dado1 <= 6; dado1++) {
-        for (int dado2 = 1; dado2 <= 6; dado2++) {
-            if (dado1 + dado2 
-
 Exercício 3:
 #include <stdio.h>
 int main() {
     int numero, soma_negativos = 0, soma_positivos = 0, count_positivos = 0;
-
     printf("\nPedro Lucas Shirabiyoshi de Miranda Vicente\n");
     printf("RA 24014777\n\n");
-
     while (1) {
         printf("Digite um número (0 para encerrar): ");
         scanf("%d", &numero);
@@ -26,23 +11,18 @@ int main() {
         if (numero == 0) {
             break;
         }
-
         if (numero < 0) {
-            soma_negativos += numero;
-        } else {
+            soma_negativos += numero;}  
+        else {
             soma_positivos += numero;
-            count_positivos++;
-        }
+            count_positivos++;}
     }
-
     printf("\nResultado:\n");
     printf("Soma dos números negativos: %d\n", soma_negativos);
-
     if (count_positivos > 0) {
         printf("Média dos números positivos: %.2f\n", (float)soma_positivos / count_positivos);
     } else {
         printf("Nenhum número positivo foi digitado.\n");
     }
-
     return 0;
 }
