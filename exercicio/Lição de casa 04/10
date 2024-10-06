@@ -9,48 +9,10 @@ int main() {
 
     for (int dado1 = 1; dado1 <= 6; dado1++) {
         for (int dado2 = 1; dado2 <= 6; dado2++) {
-            if (dado1 + dado2 == 7) {
-                printf("Dado 1: %d, Dado 2: %d\n", dado1, dado2);
-            }
-        }
-    }
-
-    return 0;
-}
-
-Exercício 2:
-#include <stdio.h>
-
-int main() {
-    int soma_desejada;
-    
-    printf("\nPedro Lucas Shirabiyoshi de Miranda Vicente\n");
-    printf("RA 24014777\n\n");
-
-    printf("Informe a soma desejada para o lançamento de dois dados (2 a 12): ");
-    scanf("%d", &soma_desejada);
-
-    if (soma_desejada < 2 || soma_desejada > 12) {
-        printf("Soma fora do intervalo permitido.\n");
-        return 0;
-    }
-
-    printf("Possibilidades de soma %d no lançamento de dois dados:\n", soma_desejada);
-
-    for (int dado1 = 1; dado1 <= 6; dado1++) {
-        for (int dado2 = 1; dado2 <= 6; dado2++) {
-            if (dado1 + dado2 == soma_desejada) {
-                printf("Dado 1: %d, Dado 2: %d\n", dado1, dado2);
-            }
-        }
-    }
-
-    return 0;
-}
+            if (dado1 + dado2 
 
 Exercício 3:
 #include <stdio.h>
-
 int main() {
     int numero, soma_negativos = 0, soma_positivos = 0, count_positivos = 0;
 
