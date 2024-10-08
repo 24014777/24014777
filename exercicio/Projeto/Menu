@@ -1,0 +1,50 @@
+#include <stdio.h>
+int main() {
+int escolha;
+printf("Menu de Produtos:\n");
+printf("1. Carro1\n");
+printf("2. Carro2\n");
+printf("3. Carro3\n");
+printf("4. Carro4\n");
+printf("5. Carro5\n");
+printf("6. Carro6\n");
+printf("Escolha um produto (1-6): ");
+scanf("%d", &escolha);
+
+switch (escolha) {
+case 1:
+printf("Produto:  Carro1\n");
+printf("Preco: R$ 2000\n");
+printf("Especificacao: Cor azul.\n");
+break;
+case 2:
+printf("Produto:  Carro2\n");
+printf("Preco: R$ 1000\n");
+printf("Especificacao: Cor branco.\n");
+break;
+case 3:
+printf("Produto:  Carro3\n");
+printf("Preco: R$ 1750\n");
+printf("Especificacao: Cor vermelho.\n");
+break;
+case 4:
+printf("Produto:  Carro4\n");
+printf("Preco: R$ 2750\n");
+printf("Especificacao: Cor amarelo.\n");
+break;
+case 5:
+printf("Produto:  Carro5\n");
+printf("Preco: R$ 2500\n");
+printf("Especificacao: Cor preto.\n");
+break;
+case 6:
+printf("Produto:  Carro6\n");
+printf("Preco: R$ 1500\n");
+printf("Especificacao: Cor cinza.\n");
+break;
+default:
+printf("Erro: Produto invalido.\n");
+break;
+}
+return 0;
+}
