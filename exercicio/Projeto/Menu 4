@@ -1,0 +1,166 @@
+#include <stdio.h>
+
+int main() {
+    int escolha1, escolha2, escolha3;
+    float valor, entrada, parcelamento, parcelas, J;
+do{
+    printf("Menu de Produtos:\n");
+    printf("1. Carro1\n");
+    printf("2. Carro2\n");
+    printf("3. Carro3\n");
+    printf("4. Carro4\n");
+    printf("5. Carro5\n");
+    printf("6. Carro6\n");
+    printf("Escolha um produto (1-6): ");
+    scanf("%d", &escolha1);
+
+    printf("Menu de cores:\n");
+    printf("1. BRANCO\n");
+    printf("2. PRETO\n");
+    printf("3. CINZA\n");
+    printf("Escolha uma cor (1-3): ");
+    scanf("%d", &escolha2);
+}
+while(1>escolha1>6||1>escolha2>3);
+    switch (escolha1*10+ escolha2) {
+    case 11:
+    printf("Produto: Carro1\n");
+    printf("Cor: BRANCO\n");
+    valor = 70000.0;
+    printf("Preço: R$ %.2f\n", valor);
+    break;
+    case 12:
+    printf("Produto: Carro1\n");
+    printf("Cor: PRETO\n");
+    valor = 75000.0;
+    printf("Preço: R$ %.2f\n", valor);
+    break;
+    case 13:
+    printf("Produto: Carro1\n");
+    printf("Cor: CINZA\n");
+    valor = 80000.0;
+    printf("Preço: R$ %.2f\n", valor);
+    break;
+    case 21:
+    printf("Produto: Carro2\n");
+    printf("Cor: BRANCO\n");
+    valor = 85000.0;
+    printf("Preço: R$ %.2f\n", valor);
+    break;
+    case 22:
+    printf("Produto: Carro2\n");
+    printf("Cor: PRETO\n");
+    valor = 75000.0;
+    printf("Preço: R$ %.2f\n", valor);
+    break;
+    case 23:
+    printf("Produto: Carro2\n");
+    printf("Cor: CINZA\n");
+    valor = 80000.0;
+    printf("Preço: R$ %.2f\n", valor);
+    break;
+    case 31:
+    printf("Produto: Carro3\n");
+    printf("Cor: BRANCO\n");
+    valor = 85000.0;
+    printf("Preço: R$ %.2f\n", valor);
+    break;
+    case 32:
+    printf("Produto: Carro3\n");
+    printf("Cor: PRETO\n");
+    valor = 70000.0;
+    printf("Preço: R$ %.2f\n", valor);
+    break;
+    case 33:
+    printf("Produto: Carro3\n");
+    printf("Cor: CINZA\n");
+    valor = 75000.0;
+    printf("Preço: R$ %.2f\n", valor);
+    break;
+    case 41:
+    printf("Produto: Carro4\n");
+    printf("Cor: BRANCO\n");
+    valor = 80000.0;
+    printf("Preço: R$ %.2f\n", valor);
+    break;
+    case 42:
+    printf("Produto: Carro4\n");
+    printf("Cor: PRETO\n");
+    valor = 85000.0;
+    printf("Preço: R$ %.2f\n", valor);
+    break;
+    case 43:
+    printf("Produto: Carro4\n");
+    printf("Cor: CINZA\n");
+    valor = 75000.0;
+    printf("Preço: R$ %.2f\n", valor);
+    break;
+    case 51:
+    printf("Produto: Carro5\n");
+    printf("Cor: BRANCO\n");
+    valor = 80000.0;
+    printf("Preço: R$ %.2f\n", valor);
+    break;
+    case 52:
+    printf("Produto: Carro5\n");
+    printf("Cor: PRETO\n");
+    valor = 85000.0;
+    printf("Preço: R$ %.2f\n", valor);
+    break;
+    case 53:
+    printf("Produto: Carro5\n");
+    printf("Cor: CINZA\n");
+    valor = 70000.0;
+    printf("Preço: R$ %.2f\n", valor);
+    break;
+    case 61:
+    printf("Produto: Carro6\n");
+    printf("Cor: BRANCO\n");
+    valor = 75000.0;
+    printf("Preço: R$ %.2f\n", valor);
+    break;
+    case 62:
+    printf("Produto: Carro6\n");
+    printf("Cor: PRETO\n");
+    valor = 80000.0;
+    printf("Preço: R$ %.2f\n", valor);
+    break;
+    case 63:
+    printf("Produto: Carro6\n");
+    printf("Cor: CINZA\n");
+    valor = 85000.0;
+    printf("Preço: R$ %.2f\n", valor);
+    break;
+    default:
+    printf("Erro: Produto ou cor inválida.\n");
+    return 1;  
+    }
+    
+    printf("Forma de pagamento:\n");
+    printf("0. À vista\n");
+    printf("1. Parcelado\n");
+    printf("Escolha a forma de pagamento (0-1): ");
+    scanf("%d", &escolha3);
+
+    if (escolha3 == 0) {
+    printf("Pagamento: À vista\n");
+    printf("Preço final: R$ %.2f\n", valor);
+    } 
+    else if (escolha3 == 1) {
+    printf("Pagamento: Parcelado\n");
+    printf("Quantas parcelas deseja pagar: ");
+    scanf("%f", &parcelamento);
+
+    printf("Quanto deseja pagar de entrada: ");
+    scanf("%f", &entrada);
+
+    parcelas = (valor - entrada) / parcelamento;
+    printf("Valor das parcelas: R$ %.2f\n", parcelas);
+    J=parcelas*0.10*parcelamento;
+    printf("Valor das parcelas com juros: R$ %.2f\n", J);
+    } 
+    else {
+    printf("Erro: Forma de pagamento inválida.\n");
+    }
+return 0;
+}
