@@ -1,0 +1,76 @@
+#include <stdio.h>
+
+int main() {
+    int escolha1, escolha2, escolha3;
+    float valor, entrada, parcelamento, parcelas, J;
+
+    printf("Menu de Produtos:\n");
+    printf("1. Carro1\n");
+    printf("2. Carro2\n");
+    printf("Escolha um produto (1-2): ");
+    scanf("%d", &escolha1);
+
+    printf("Menu de cores:\n");
+    printf("1. BRANCO\n");
+    printf("2. PRETO\n");
+    printf("Escolha uma cor (1-2): ");
+    scanf("%d", &escolha2);
+
+    switch (escolha1 * 2 + escolha2) {
+    case 3:
+    printf("Produto: Carro1\n");
+    printf("Cor: BRANCO\n");
+    valor = 70000.0;
+    printf("Preço: R$ %.2f\n", valor);
+    break;
+    case 4:
+    printf("Produto: Carro1\n");
+    printf("Cor: PRETO\n");
+    valor = 75000.0;
+    printf("Preço: R$ %.2f\n", valor);
+    break;
+    case 5:
+    printf("Produto: Carro2\n");
+    printf("Cor: BRANCO\n");
+    valor = 80000.0;
+    printf("Preço: R$ %.2f\n", valor);
+    break;
+    case 6:
+    printf("Produto: Carro2\n");
+    printf("Cor: PRETO\n");
+    valor = 85000.0;
+    printf("Preço: R$ %.2f\n", valor);
+    break;
+    default:
+    printf("Erro: Produto ou cor inválida.\n");
+    return 1;  
+    }
+    
+    printf("Forma de pagamento:\n");
+    printf("0. À vista\n");
+    printf("1. Parcelado\n");
+    printf("Escolha a forma de pagamento (0-1): ");
+    scanf("%d", &escolha3);
+
+    if (escolha3 == 0) {
+    printf("Pagamento: À vista\n");
+    printf("Preço final: R$ %.2f\n", valor);
+    } 
+    else if (escolha3 == 1) {
+    printf("Pagamento: Parcelado\n");
+    printf("Quantas parcelas deseja pagar: ");
+    scanf("%f", &parcelamento);
+
+    printf("Quanto deseja pagar de entrada: ");
+    scanf("%f", &entrada);
+
+    parcelas = (valor - entrada) / parcelamento;
+    printf("Valor das parcelas: R$ %.2f\n", parcelas);
+    J=parcelas*0.10*parcelamento;
+    printf("Valor das parcelas com juros: R$ %.2f\n", J);
+    } 
+    else {
+    printf("Erro: Forma de pagamento inválida.\n");
+    }
+return 0;
+}
