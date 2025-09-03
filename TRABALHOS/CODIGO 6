@@ -1,0 +1,23 @@
+#include <stdio.h> //Declaração de biblioteca
+
+int main() {
+    double n1, n2, n3, resultado; //Variaveis utilizadas 
+
+    printf("Digite número um: "); //Usuario digite três numeros
+    scanf("%3lf", &n1); //Valor armazenado de numero dois
+    printf("Digite número dois: "); //Usuario digite n2
+    scanf("%3lf", &n2); //Valor armazenado de n2
+    printf("Digite numero três: "); //Usuario digite numero três
+    scanf("%3lf", &n3); //Valor armazenado de n3
+
+resultado=n1+n2+n3;//Calculo da soma do n1,n2 e n3
+
+printf("%3lf+%3lf+%3lf=%3lf\n", n1, n2, n3, resultado);
+
+  if (resultado-0.5==(int)resultado){
+        printf("O seu ultimo digito é PAR.\n");
+        } else {
+        printf("O seu ultimo digito é ÍMPAR.\n");
+  }
+    return 0;
+}
