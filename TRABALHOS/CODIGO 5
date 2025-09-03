@@ -2,15 +2,16 @@
 
 int main() {
     int RA, ultimo;
+    double resultado
 
     printf("Digite o seu RA: ");
     scanf("%d", &RA);
 
-    ultimo = RA % 10;
+   
 
     printf("O último digito do seu RA: %d é: %d\n", RA, ultimo);
-
-    if (ultimo % 2 == 0){
+resultado= ultimo/2
+    if (resultadoo-0.5==(int)resultado){
         printf("O seu ultimo digito é PAR.\n");
         } else {
         printf("O seu ultimo digito é ÍMPAR.\n");
