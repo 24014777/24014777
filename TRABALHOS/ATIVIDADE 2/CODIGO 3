@@ -1,25 +1,25 @@
-#include <stdio.h>
+#include <stdio.h>//Declaração de biblioteca
 
-double fatorial(int n);
+double fatorial(int n);//Protótipo da função fatorial
 
 int main(void) {
-    int numero;
+    int numero;//Variaveis utilizadas
     double f;
 
-    printf("Digite o numero que deseja calcular o fatorial: ");
-    scanf("%d", &numero);
+    printf("Digite o numero que deseja calcular o fatorial: ");//Usuario digita o numero para poder calcuar o fatorial
+    scanf("%d", &numero);//Valor armazenado do numero inteiro
 
-    f = fatorial(numero); // chamada da função fatorial
+    f = fatorial(numero); //Chamada da função fatorial
 
-    printf("Fatorial de %d = %.0lf\n", numero, f);
+    printf("Fatorial de %d = %.0lf\n", numero, f);//Apresentação do resultado
 
     return 0;
 }
-
+// Função recursiva que calcula o fatorial de um numero inteiro n
 double fatorial(int n) {
-    if (n <= 1) {
-        return 1; // Caso base
-    } else {
-        return n * fatorial(n - 1); // Chamada recursiva
+    if (n <= 1) {// Se a fatorial de n <= 1
+        return 1; // Caso base: fatorial é 1
+    } else {//Se a fatoril de n>1
+        return n * fatorial(n - 1); // Chamada recursiva: multiplica n pelo fatorial de (n-1)
     }
 }
